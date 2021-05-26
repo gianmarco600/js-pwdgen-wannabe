@@ -83,5 +83,10 @@ for (i = 0; i < coloreLen; i++) {
 console.log(pwd);
 
 
+
+
 var password = pwd.toString();
-console.log(password);
+password = password.replace(/,/g, "");
+console.log(password + "21");
+
+document.getElementById("pwd").innerHTML = password;
