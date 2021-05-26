@@ -18,11 +18,12 @@ var pwd;
 
 
 
-var nomeLen = nome.length;
+
 var i;
 var arrNome = [];
 var pwd = [];
 nome = nome.trim();
+var nomeLen = nome.length;
 
 for (i = 0; i < nomeLen; i++) {
     arrNome = nome.split("");
@@ -40,10 +41,11 @@ console.log(pwd);
 
 // ---------------------------------------------------------------
 
-var cognomeLen = cognome.length;
+
 var i;
 var arrCognome = [];
 cognome = cognome.trim();
+var cognomeLen = cognome.length;
 
 for (i = 0; i < cognomeLen; i++) {
     arrCognome = cognome.split("");
@@ -63,10 +65,11 @@ console.log(pwd);
 
 // -----------------------------------------------
 
-var coloreLen = colore.length;
+
 var i;
 var arrColore = [];
 colore = colore.trim();
+var coloreLen = colore.length;
 
 for (i = 0; i < coloreLen; i++) {
     arrColore = colore.split("");
@@ -87,6 +90,7 @@ console.log(pwd);
 
 var password = pwd.toString();
 password = password.replace(/,/g, "");
-console.log(password + "21");
+password = password + "21"
+console.log(password);
 
 document.getElementById("pwd").innerHTML = password;
